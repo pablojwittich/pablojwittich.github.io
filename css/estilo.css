@@ -71,6 +71,7 @@
     background-color: white;
     border-radius: 100%;
   }
+  /* INICIO */
   /* Main Inicio*/
   
   .hijo figure img {
@@ -95,7 +96,55 @@
     border:solid #003044;
     padding-right: 0.5em;
     padding-left: 0.5em;
-  
     }
 
+  /* REGISTRO */
+  .tab1, .tab2 {
+    background-color: #f3353a;
+    font-size: 1.2em;
+    padding: 1em 1em 1em 1em;
+    margin-top: 1em;
+  }
+  .form6 {
+    display: flex;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    margin: 0 auto;
+  }
+  label, input{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: block;
+    text-align: center; 
+  }
+  .bottom {
+    margin-bottom: 1em;
+  }
+  input {
+    padding: 1em 1em;
+    padding-right: 15em;
+    display: block; 
+    margin: 0 auto;
+  }
+  select {
+    display: flex;
+    margin: 0 auto;
+    padding: 1em 3em 1em 3em
+  }
+  .dl1 {
+    padding-bottom: 7em;
+    margin-bottom: 1em;
+  }
+  .lb1 {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+
 }
+
+
+
