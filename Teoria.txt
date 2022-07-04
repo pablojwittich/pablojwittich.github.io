@@ -1,0 +1,63 @@
+    <!--
+https://youtu.be/hKq5W-v-Qp8
+
+  DISEÑO RESPONSIVE
+  Reacción de mostrarse y adpatarse al dispositivo
+  
+  ¿Que implica un buen RWD?
+  - El mismo sitio se ve bien en cualquier tamaño de pantall, sin tener que hacer zoom
+  - Verse bien no significa que se verá igual, sino que será comodo en el dispositivo 
+    que se use
+
+  ¿Por qué pensar más allá del usuario de escritorio ?
+  - Mas del 52% de la población mundial ingresa a la web desde el telefono.
+
+  Resolución vs Viewport (Ventana grafica)
+  - Resolución: es la cantidad de pixeles que puede mostrar una pantalla 
+  - Viewport: es la cantidad de pixeles simulada por el navegador cuando visualizaI
+      una pagina web. Area util donde se mostrará la página.
+      Suele tener cantidad de pixeles diferentes, ya que según cada fabricante se 
+      reescala el viewport.
+
+  *Problemas:
+    - Si no se configura nada la pagina se comprime para mostrarse en su totalidad, se ve 
+        mas pequeña. Porque el tamaño de la pagina es superior al tamaño del viewport.
+    - Desde 2016 Google indexa(muestra) la versión movil sobre la escritorio
+   
+  Como diseñar un sitio Responsive?
+    Para poder hacer un sitio que se adapte al tamaño debemos:
+      1. Determinar la dimension del viewport en html
+        - En todas las paginas incorporar en el head la etiqueta:
+            <meta name="viewport" content="width=width-device, initial-scale=1.0"
+              -width="width-device" -> Establece el ancho del viewport tomando el ancho del dispositivo
+              - initial-scale="1.0" -> Establece el zoom por defecto para que no tenga zoom
+      2. Usar en css @media para hacer las adaptaciones a distintas pantallas
+          @media destino and (tamaño a copmparar) and (orientación){
+            #menu li { display block;
+            }
+        }
+        - Destino -> Tipos de dispositivos en el que se visualizará
+          * all: Aplicable a todos los dispositivos
+          * print: Destinado a material paginado y para docuemntos visibles en pantalla
+                    a modo de vista previa para impresión.
+          * screen: Destinado a pantallas a color.
+          * speach: Destinado a sintetizadores de voz.
+        - Tamaño -> Se elige pensando en los dispositivos objetivos que esperamos visiten
+                    nuestro sitio, mide en px.
+        - Orientacion -> Depende de la posición del celular
+          * portrait(vertical)
+          * landscape(horizontal)
+  Dos enfoques distintos 
+    - Desktp first 
+    - Mobile first
+  BreakPoints
+    Son puntos de quiebre de tamaños de pantalla en los cuales el Css deberia ser distinto
+    320 a 480 px -> Celulares
+    481 a 768 px -> Ipad, tables
+    769 a 1024 px -> Pantallas pequeñas, laptops
+    1025 a 1200 px -> Pantalla grandes, PC
+    1201px y mas -> Pantallas extras grandes, tv
+
+
+
+-->

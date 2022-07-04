@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+        <meta name="author" content="Wittich Pablo Javier"> 
+        <meta name="description" content="Información sobre el juego Brawlhalla">
+        <link rel="stylesheet" href="../css/estilo.css">
+        <title>Brawlhalla</title>
+    </head>
+        <body>
+            <header>
+                <figure>
+                    <img class="logo" src="../img/logo.png" alt="Imagen del logo del juego Brawlhalla">
+                </figure>
+            </header>
+            <section id="contenedor-menu">
+                <a href="#contenedor-menu"><img src="../img/abrir.png" id="abrir"></a>
+                <a href="#"><img src="../img/cerrar.png" id="cerrar"></a>
+
+                <nav>
+                    <ul id="contenedor-enlaces">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section  class="registro">
+            <main class="tab1">
+                    <!-- FORMULARIO N1 --> 
+                    <dl>                   
+                        <form action="mailto:pablojwittich1998@gmail.com" method="post">
+                        <dt>
+                             <label form="usu">Usuario:</label>
+                             <input class="lb1" type="text" name="name" placeholder="Nombre de Usuario" maxlenght="50" required>
+                        </dt>
+                        <dt>
+                             <label form="mail">E-mail:</label>
+                                 <input class="lb1"  type="email" name="mail" placeholder="ejemplo@geek.com" maxlenght="50" required>
+                        </dt>
+                        <dt>
+                            <label form="pass">Contraseña:</label>
+                                <input  class="lb1" type="password" name="clave" minlength="8">
+                        </dt>
+                        <dt>
+                            <label form="FechNac">Fecha de Nacimiento</label>
+                                <input type="date" name="fechaNac" value="2000-01-01">
+                        </dt>
+                        <dt>
+                            <label form="pais">Pais</label>
+                                 <select name="pais" id="pais">
+                                    <option>Argentina</option>
+                                    <option>Brasil</option>
+                                    <option>Canada</option>
+                                    <option>Dinamarca</option>
+                                    <option>Escocia</option>
+                                    <option>Francia</option>
+                                    <option>Groenlandia</option>
+                                </select>
+                        </dt>
+                        <dt>
+                            <fieldset>
+                                 <legend>¿Quiere recibir novedades?</legend>
+                                 <label for="Si">Si
+                                     <input type="radio" name="Si" id="Si" value="Si">
+                                 </label>
+                                 <label for="No">No
+                                     <input type="radio" name="No" id="No" value="No">
+                                 </label>  
+                            </fieldset> 
+                                <input type="submit" value="Enviar">
+                        </dt>
+                        <dt>
+                            <input type="submit" value="Subcribirte" url="google.con">
+                        </dt>
+                    </dl>
+                    </form>
+            </main>
+            <aside class="tab2">
+                <!-- FORMULARIO N2 --> 
+                <form action="mailto:pablojwittich1998@gmail.com" method="post"> <legend>¿Algún inconveniente? <strong>Contactanos</strong></legend>
+                        <fieldset>
+                            <dl>
+                                 <dl>
+                                    <label for="corro">Correo:</label>
+                                    <input class="lb1"  class="lb1"  type="email" placeholder="ejemolo@gmial.com" required>
+                                </dl>
+                                <dl>
+                                    <label for="asunto">Asunto:</label>
+                                    <input class="lb1" type="text" placeholder="Error en ...">
+                                </dl>
+                                <dl>
+                                    <input  class="dl1" type="text" placeholder="Escribe aqui" maxlenght="200">
+                                </dl>
+                                <dl>
+                                    <input type="submit"value="Enviar comentario">
+                                </dt>
+                            </dl>
+                        </fieldset>
+                </form>
+            </aside>
+            </section>
+            <footer>
+                 <p>Copyright&copy; 2022 - Página creada por Wittich Pablo - Todos los derechos reservados</p>
+            </footer>
+        </body>
+</html>
